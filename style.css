@@ -1,5 +1,3 @@
-BGCOLOR="SILVER" TEXT="BLACK" LINK="BLACK" ALINK="BLACK" VLINK="BLACK"
-
 body {
     background-color: silver;
     text: black;
@@ -8,14 +6,14 @@ body {
 
 
 a:link {
-    color: red;
+    color: black;
 }
   a:visited {
-    color: green;
+    color: black;
   }
   a:hover {
-    color: hotpink;
+    color: black;
   }
   a:active {
-    color: blue;
+    color: black;
   } 
