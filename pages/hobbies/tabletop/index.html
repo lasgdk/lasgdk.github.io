@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabletop gaming | LASG.DK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/css/main.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="brand"><a href="../../../index.htm">LASG.DK</a></div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        <span>Menu</span>
+      </button>
+      <nav aria-label="Hovednavigation">
+        <ul id="primary-navigation">
+          <li><a href="../../../index.htm">Forside</a></li>
+          <li>
+            <a href="../../cybersecurity/index.html">Cybersecurity</a>
+            <ul>
+              <li><a href="../../cybersecurity/services.html">Ydelser</a></li>
+              <li><a href="../../cybersecurity/resources.html">Ressourcer</a></li>
+            </ul>
+          </li>
+          <li><a href="../../about/index.html">Om Lars</a></li>
+          <li><a href="index.html">Fritid</a></li>
+          <li><a href="https://www.linkedin.com/in/larssommer4/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.querySelector('#primary-navigation');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          const isOpen = menu.classList.toggle('show');
+          toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+    });
+  </script>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Tabletop gaming &amp; fællesskab</h1>
+        <p>Når tiden tillader det, dykker jeg ned i strategiske brætspil og miniaturekampe. Her deler jeg erfaringer, scenarier og tips til både nye og erfarne spillere.</p>
+      </div>
+      <div class="card">
+        <h3>Hvorfor tabletop?</h3>
+        <p>Det kombinerer strategi, historiefortælling og socialt samvær – præcis som god cybersikkerhed kræver koordinering og samarbejde.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Artikler og guider</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Bolt Action</h3>
+          <p>Taktiske WWII-scenarier, maleterreng og husregler til at skabe spænding.</p>
+          <a href="../../../tabletopgaming/boltaction.html">Læs mere</a>
+        </article>
+        <article class="card">
+          <h3>Warhammer 40.000</h3>
+          <p>Hærbygning, kampstrategi og hobbyprojekter fra grimdark-universet.</p>
+          <a href="../../../tabletopgaming/warhammer40k.html">Læs mere</a>
+        </article>
+        <article class="card">
+          <h3>HeroQuest</h3>
+          <p>Klassisk dungeon crawling med moderne tweaks og familievenlige scenarier.</p>
+          <a href="../../../tabletopgaming/heroquest.html">Læs mere</a>
+        </article>
+        <article class="card">
+          <h3>Warlords of Erehwon</h3>
+          <p>Fantasiarmeer, kampagner og hjemmelavede missioner.</p>
+          <a href="../../../tabletopgaming/warlords.html">Læs mere</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Del gerne</h2>
+      <p>Har du egne scenarier eller tips, så skriv til mig. Jeg deler gerne gæsteindlæg og billeder fra fælles spil.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Andre interesser</strong>
+        <ul>
+          <li><a href="../../cybersecurity/index.html">Cybersikkerhed</a></li>
+          <li><a href="../../about/index.html">Om Lars</a></li>
+          <li><a href="../../../tabletopgaming/tom.htm">Gamle arkiver</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Kontakt</strong>
+        <p>Del dine idéer via <a href="https://www.linkedin.com/in/larssommer4/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
