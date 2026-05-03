@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ressourcer | LASG.DK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="brand"><a href="../../index.htm">LASG.DK</a></div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        <span>Menu</span>
+      </button>
+      <nav aria-label="Hovednavigation">
+        <ul id="primary-navigation">
+          <li><a href="../../index.htm">Forside</a></li>
+          <li>
+            <a href="index.html">Cybersecurity</a>
+            <ul>
+              <li><a href="services.html">Ydelser</a></li>
+              <li><a href="resources.html">Ressourcer</a></li>
+            </ul>
+          </li>
+          <li><a href="../about/index.html">Om Lars</a></li>
+          <li><a href="../hobbies/tabletop/index.html">Fritid</a></li>
+          <li><a href="https://www.linkedin.com/in/larssommer4/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.querySelector('#primary-navigation');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          const isOpen = menu.classList.toggle('show');
+          toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+    });
+  </script>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Ressourcer og værktøjer</h1>
+        <p>Her samler jeg skabeloner, checklist­er og inspiration til dig, der arbejder med cyber- og informationssikkerhed. Alt kan frit benyttes og tilpasses.</p>
+      </div>
+      <div class="card">
+        <h3>Opdateringer</h3>
+        <p>Jeg opdaterer siden løbende med nye materialer. Gem siden som bogmærke eller følg med på LinkedIn for notifikationer.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Skabeloner</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Governance charter</h3>
+          <p>En kompakt skabelon til at beskrive roller, ansvar og beslutningsgange for sikkerhedsorganisationen.</p>
+          <p><strong>Format:</strong> PowerPoint &amp; PDF</p>
+        </article>
+        <article class="card">
+          <h3>Risikovurdering light</h3>
+          <p>Excel-model med scoringer, heatmap og forslag til mitigering. Ideel til små og mellemstore projekter.</p>
+        </article>
+        <article class="card">
+          <h3>Incident log</h3>
+          <p>Skema til at dokumentere hændelser, læring og status. Kan bruges både af drift og ledelse.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Artikler og guides</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Guide: Klar til NIS2</h3>
+          <p>En praktisk introduktion til kravene og hvordan du bygger et roadmap uden at drukne organisationen i administration.</p>
+        </article>
+        <article class="card">
+          <h3>Checklist: Leverandørstyring</h3>
+          <p>Oversigt over krav til tredjepartsaftaler, due diligence og løbende evaluering.</p>
+        </article>
+        <article class="card">
+          <h3>FAQ: Zero Trust</h3>
+          <p>Besvarer de mest almindelige spørgsmål om arkitektur, teknologi og forretningsværdi.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Sådan bruger du materialet</h2>
+      <p>Materialet er tænkt som udgangspunkt for dialog i din egen organisation. Tilpas indholdet til jeres processer, og kontakt mig gerne, hvis du ønsker sparring omkring implementering.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Relaterede sider</strong>
+        <ul>
+          <li><a href="index.html">Cybersecurity</a></li>
+          <li><a href="services.html">Ydelser</a></li>
+          <li><a href="../about/index.html">Om Lars</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Følg med</strong>
+        <p>Nye ressourcer annonceres på <a href="https://www.linkedin.com/in/larssommer4/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

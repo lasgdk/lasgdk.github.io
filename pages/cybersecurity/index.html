@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity | LASG.DK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="brand"><a href="../../index.htm">LASG.DK</a></div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        <span>Menu</span>
+      </button>
+      <nav aria-label="Hovednavigation">
+        <ul id="primary-navigation">
+          <li><a href="../../index.htm">Forside</a></li>
+          <li>
+            <a href="index.html">Cybersecurity</a>
+            <ul>
+              <li><a href="services.html">Ydelser</a></li>
+              <li><a href="resources.html">Ressourcer</a></li>
+            </ul>
+          </li>
+          <li><a href="../about/index.html">Om Lars</a></li>
+          <li>
+            <a href="../hobbies/tabletop/index.html">Fritid</a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/larssommer4/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.querySelector('#primary-navigation');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          const isOpen = menu.classList.toggle('show');
+          toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+    });
+  </script>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Cybersikkerhed med forretningen i centrum</h1>
+        <p>Jeg hjælper organisationer med at oversætte regulativer, kundekrav og teknisk kompleksitet til konkrete mål, roadmaps og indsatser. Her kan du læse om, hvordan vi strukturerer samarbejdet.</p>
+      </div>
+      <div class="card">
+        <h3>Sådan arbejder jeg</h3>
+        <ul>
+          <li>Strategiske dialoger på ledelsesniveau</li>
+          <li>Workshops og analyse med tekniske teams</li>
+          <li>Implementering og løbende opfølgning</li>
+          <li>Forankring via træning og klare beslutningsveje</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Tre faser i samarbejdet</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>1. Fokus og baseline</h3>
+          <p>Vi afdækker den aktuelle situation, herunder governance, kontroller og teknisk landskab. Resultatet er en fælles forståelse af risici og modenhed.</p>
+        </article>
+        <article class="card">
+          <h3>2. Design og prioritering</h3>
+          <p>På baggrund af baselinen udvikler vi målarkitektur, policies og handlingsplaner, der er realistiske og understøtter forretningens tempo.</p>
+        </article>
+        <article class="card">
+          <h3>3. Implementering</h3>
+          <p>Vi omsætter planerne til praksis via projekter, træning og ledelsesrapportering. Jeg sikrer momentum og dokumentation.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Relaterede undermapper</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Ydelser</h3>
+          <p>Detaljeret oversigt over rådgivning, interim-roller og workshops.</p>
+          <a href="services.html">Udforsk ydelserne</a>
+        </article>
+        <article class="card">
+          <h3>Ressourcer</h3>
+          <p>Skabeloner, checklister og inspiration til dine egne sikkerhedsinitiativer.</p>
+          <a href="resources.html">Find værktøjer</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Kontakt</strong>
+        <p>Vil du høre mere? Skriv via <a href="https://www.linkedin.com/in/larssommer4/" target="_blank" rel="noopener">LinkedIn</a>.</p>
+      </div>
+      <div>
+        <strong>Flere sider</strong>
+        <ul>
+          <li><a href="services.html">Ydelser</a></li>
+          <li><a href="resources.html">Ressourcer</a></li>
+          <li><a href="../hobbies/tabletop/index.html">Tabletop gaming</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

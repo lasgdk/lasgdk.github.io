@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ydelser | LASG.DK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="brand"><a href="../../index.htm">LASG.DK</a></div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        <span>Menu</span>
+      </button>
+      <nav aria-label="Hovednavigation">
+        <ul id="primary-navigation">
+          <li><a href="../../index.htm">Forside</a></li>
+          <li>
+            <a href="index.html">Cybersecurity</a>
+            <ul>
+              <li><a href="services.html">Ydelser</a></li>
+              <li><a href="resources.html">Ressourcer</a></li>
+            </ul>
+          </li>
+          <li><a href="../about/index.html">Om Lars</a></li>
+          <li><a href="../hobbies/tabletop/index.html">Fritid</a></li>
+          <li><a href="https://www.linkedin.com/in/larssommer4/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggle = document.querySelector('.nav-toggle');
+      const menu = document.querySelector('#primary-navigation');
+      if (toggle && menu) {
+        toggle.addEventListener('click', () => {
+          const isOpen = menu.classList.toggle('show');
+          toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+      }
+    });
+  </script>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h1>Ydelser og samarbejdsform</h1>
+        <p>Fra kortvarige afklaringer til længerevarende engagements. Jeg sammensætter forløb, der matcher organisationens modenhed og ambitioner.</p>
+        <a class="button button-primary" href="https://www.linkedin.com/in/larssommer4/" target="_blank" rel="noopener">Book en introduktionssamtale</a>
+      </div>
+      <div class="card">
+        <h3>Brancher</h3>
+        <p>Erfaring fra finans, energi, produktion, tech og offentlige myndigheder. Fællesnævneren er høje krav til compliance, tilgængelighed og tillid.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Rådgivningsområder</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Strategisk rådgivning</h3>
+          <p>Udvikling af sikkerhedsstrategier, målbilleder og governance strukturer. Jeg hjælper dig med at sikre budgetter og forankring.</p>
+        </article>
+        <article class="card">
+          <h3>Program- og projektledelse</h3>
+          <p>Eksekvering af sikkerhedsprojekter, fra identitet &amp; adgang til SOC-optimering. Fokus på fremdrift, leverancer og dokumentation.</p>
+        </article>
+        <article class="card">
+          <h3>Interim CISO / sikkerhedsleder</h3>
+          <p>Mid­lertidig ledelse af sikkerhedsfunktionen. Ideelt ved omstrukturering, rekruttering eller særlige compliance-krav.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Workshops og formater</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Kickstart NIS2</h3>
+          <p>To-dages workshop, der vurderer NIS2-parathed og leverer en prioriteret handlingsplan.</p>
+        </article>
+        <article class="card">
+          <h3>Incident rehearsal</h3>
+          <p>Bordøvelser for ledelsen og krisestaben. Vi tester beredskab, kommunikation og beslutningsgange.</p>
+        </article>
+        <article class="card">
+          <h3>Sikkerhedskultur</h3>
+          <p>Design af awareness-programmer, måling af effekt og opbygning af ambassadørnetværk.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Sådan kommer vi i gang</h2>
+      <ol>
+        <li>Introduktionsmøde hvor vi afstemmer udfordringer, succeskriterier og tidshorisont.</li>
+        <li>Forslag til samarbejde, herunder team-sammensætning, leverancer og estimater.</li>
+        <li>Opstart med en fælles plan og klare kontaktpunkter.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <strong>Andre sider</strong>
+        <ul>
+          <li><a href="index.html">Cybersecurity</a></li>
+          <li><a href="resources.html">Ressourcer</a></li>
+          <li><a href="../about/index.html">Om Lars</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Kontakt</strong>
+        <p>Skriv via <a href="https://www.linkedin.com/in/larssommer4/" target="_blank" rel="noopener">LinkedIn</a> eller send en invitation til et møde.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
